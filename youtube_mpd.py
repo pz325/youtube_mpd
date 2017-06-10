@@ -31,5 +31,5 @@ if args.output:
     f.close()
 else:
     print('==== Youtube DASH MPD ====')
-    xml = xml.dom.minidom.parseString(r.content)
-    print(xml.toprettyxml())
+    xml_nodes = xml.dom.minidom.parseString(r.content)
+    print(xml_nodes.toprettyxml())
